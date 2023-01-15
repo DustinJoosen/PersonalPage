@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    font-family: Tenorite, serif;
 }
 
 @font-face {
@@ -30,12 +31,11 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 5px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Tenorite", serif;
     color: #1e1e1e;
     cursor: pointer;
-    padding: 10px;
-    padding-bottom: 3px;
+    padding: 10px 10px 3px;
     transition: 1s;
     border: 2px solid transparent;
 }
@@ -49,6 +49,7 @@ nav ul li:hover {
     position: absolute;
     top: 50px;
     left: 0;
+    z-index: -1;
 }
 
 #header-name {
@@ -76,4 +77,86 @@ nav ul li:hover {
     100% {
         opacity: 0.9;
     }
+}
+
+.pic-of-me {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#projects {
+    margin-top: 120px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    border: 1px solid white;
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    font-family: "Tenorite";
+    cursor: pointer;
+}
+.project::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 90%;
+    bottom: 30%;
+    background: url("../img/cursor.png");
+    background-size: 100%;
+    animation: cursorTwitch 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursorTwitch {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.project h4 {
+    text-align: center;
+}
+
+.project-tags {
+    width: 100%;
+    height: 30px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+}
+.project-img {
+    width: 96%;
+    height: 120px;
+    border: 1px solid white;
+    margin: 10px;
+    margin-left: 2%;
+    overflow-y: clip;
+}
+
+.project-img img {
+    width: 100%;
 }
