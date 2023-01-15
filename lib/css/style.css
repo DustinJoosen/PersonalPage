@@ -83,6 +83,7 @@ nav ul li:hover {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 2px solid white;
 }
 
 #projects {
@@ -95,14 +96,16 @@ nav ul li:hover {
 }
 
 .project {
-    border: 1px solid white;
-    width: 25%;
+    border: 1px solid gray;
+    width: 22%;
     height: 300px;
     padding: 10px;
     border-radius: 10px;
     background-color: #1e1e1e;
     font-family: "Tenorite";
     cursor: pointer;
+    margin-bottom: 60px;
+    transition: border 400ms;
 }
 .project::after {
     content: '';
@@ -116,6 +119,10 @@ nav ul li:hover {
     background-size: 100%;
     animation: cursorTwitch 1s linear;
     animation-iteration-count: infinite;
+}
+
+.project:hover {
+    border: 1px solid white;
 }
 
 @keyframes cursorTwitch {
@@ -155,8 +162,62 @@ nav ul li:hover {
     margin: 10px;
     margin-left: 2%;
     overflow-y: clip;
+    transition: width, height, position, top 1s;
 }
 
 .project-img img {
     width: 100%;
+}
+
+.skill {
+    width: 45%;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    transition: border 1s;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: #1e1e1e;
+}
+.skill:hover {
+    border: 1px solid white;
+}
+
+.skill-img img {
+    width: 125px;
+    height: 125px;
+}
+.skill-img {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.skill-txt {
+    display: inline-block;
+    margin-right: 20px;
+}
+.skill-txt p span {
+    font-size: 28px;
+    display:block;
+    margin-bottom: -10px
+}
+
+.skill-bar {
+    display: inline-block;
+}
+.skill-bar progress {
+    height: 40px;
+    border-radius: 0;
+    width: 250px;
+    border: 1px solid white;
+    appearance: none;
+    background-color: white;
+}
+progress::-webkit-progress-value {
+    background: white;
+}
+progress::-webkit-progress-bar {
+    background: #1e1e1e;
 }
