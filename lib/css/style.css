@@ -61,7 +61,7 @@ nav ul li:hover {
 .underline::after {
     content: '';
     display: block;
-    width: 500px;
+    width: 600px;
     height: 6px;
     margin-top: -20px;
     background-color: white;
@@ -220,4 +220,43 @@ progress::-webkit-progress-value {
 }
 progress::-webkit-progress-bar {
     background: #1e1e1e;
+}
+
+footer {
+    height: 80px;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer p {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.footer-links {
+    display: inline-block;
+}
+footer .link {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 2px;
+    padding: 8px;
+    transition: background-color 1s;
+}
+footer .link:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+footer .link img {
+    width: 100%;
+}
+
+footer .arrow-up {
+    display: inline-block;
+}
+footer .arrow-up a img {
+    width: 50px;
 }
