@@ -1,0 +1,40 @@
+.url-table table, tr, td {
+    padding: 5px;
+    border: 1px solid white;
+}
+.url-table a {
+    color: white;
+}
+
+.tag-button {
+    padding: 4px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 3px;
+    transition: border 1s;
+}
+.tag-button:hover {
+    border-color: white;
+}
+
+.tag-button-blue {
+    border-color: blue;
+}
+.tag-button-blue:hover {
+    background-color: lightskyblue;
+}
+
+.tag-button-green {
+    border-color: green;
+}
+.tag-button-green:hover {
+    background-color: lightgreen;
+}
+
+.tag-button-red {
+    border-color: red;
+}
+.tag-button-red:hover {
+    background-color: tomato;
+}

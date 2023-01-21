@@ -4,8 +4,10 @@
 	<title>Dustin Joosen</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
-	<link rel="stylesheet" href="lib/css/debug.css">
-	<link rel="stylesheet" href="lib/css/style.css">
+<!--	<link rel="stylesheet" href="lib/css/debug.css">-->
+	<link rel="stylesheet" href="lib/css/generic.css">
+	<link rel="stylesheet" href="lib/css/projects.css">
+	<link rel="stylesheet" href="lib/css/skills.css">
 	<link rel="icon" href="lib/favicon.ico" />
 </head>
 <body>
@@ -19,7 +21,7 @@
 		<div id="me" class="mb-5">
 			<h1 class="animated-text" id="header-name" content="Dustin Joosen"></h1>
 			<div class="d-flex">
-				<img src="lib/img/dustin.jpg" class="pic-of-me col-4" />
+				<img src="lib/img/dustin.jpg" class="pic-of-me col-4" alt="Picture of Dustin Joosen" />
 				<div class="col-1"></div>
 				<p class="col-6">
 					Hi! My name is Dustin Joosen.<br/>
@@ -44,9 +46,9 @@
 				<div class="project" content="schedulesite" title="Click to view the result in action!">
 					<h4>ScheduleSite</h4>
 					<div class="project-img">
-						<img src="lib/img/projects/schedulesite.png" />
+						<img src="lib/img/projects/schedulesite.png"  alt="Picture of ScheduleSite webpage"/>
 					</div>
-					<p style="height: 45%;">
+					<p class="project-desc">
 						ScheduleSite is a site that utilizes the schedule API of Windesheim.
 						This website allows students to view their school schedule in an alternative way.
 					</p>
@@ -57,9 +59,9 @@
 				<div class="project" content="albumstobuy" title="Click to view the result in action!">
 					<h4>AlbumsToBuy</h4>
 					<div class="project-img">
-						<img src="lib/img/projects/albumstobuy.png" />
+						<img src="lib/img/projects/albumstobuy.png" alt="Picture of AlbumsToBuy webpage" />
 					</div>
-					<p style="height: 45%;">
+					<p class="project-desc">
 						AlbumsToBuy is a webshop for the fictional business 'AlbumsToBuy'.
 						Customers can view an album with its tracks, and order it.
 					</p>
@@ -70,9 +72,9 @@
 				<div class="project" content="pulserun" title="Click to view the result in action!">
 					<h4>Pulse Run</h4>
 					<div class="project-img">
-						<img src="lib/img/projects/pulserun.png" />
+						<img src="lib/img/projects/pulserun.png" alt="Picture of PulseRun" />
 					</div>
-					<p style="height: 45%;">
+					<p class="project-desc">
 						PulseRun is a small python game where you try to survive as long as possible,
 						While avoiding the enemy and collecting batteries to shoot pulses at the enemy.
 					</p>
@@ -83,9 +85,9 @@
 				<div class="project" content="novachat" title="Click to view the result in action!">
 					<h4>Novachat</h4>
 					<div class="project-img">
-						<img src="lib/img/projects/novachat.png" />
+						<img src="lib/img/projects/novachat.png" alt="Picture of Novachat" />
 					</div>
-					<p style="height: 45%;">
+					<p class="project-desc">
 						Novachat is a real-time chat app, with different channels you can create and add people to.
 						It uses a combination of laravel and jquery for frontend and backend respectively.
 					</p>
@@ -100,7 +102,7 @@
 			<div class="skills-list">
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/python.png" alt="">
+						<img src="lib/img/skills/python.png" alt="Logo of programming language Python">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -114,7 +116,7 @@
 				</div>
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/csharp.png" alt="">
+						<img src="lib/img/skills/csharp.png" alt="Logo of programming language C#">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -128,7 +130,7 @@
 				</div>
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/php.png" alt="">
+						<img src="lib/img/skills/php.png" alt="Logo of programming language PHP">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -142,7 +144,7 @@
 				</div>
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/js.png" alt="">
+						<img src="lib/img/skills/js.png" alt="Logo of programming language Javascript">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -156,7 +158,7 @@
 				</div>
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/SQL.png" alt="">
+						<img src="lib/img/skills/SQL.png" alt="Logo of DDL language SQL">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -170,7 +172,7 @@
 				</div>
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/html.png" alt="">
+						<img src="lib/img/skills/html.png" alt="Logo of markup language HTML">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -184,7 +186,7 @@
 				</div>
 				<div class="skill">
 					<div class="skill-img">
-						<img src="lib/img/skills/java.png" alt="">
+						<img src="lib/img/skills/java.png" alt="Logo of programming language Java">
 					</div>
 					<div class="skill-txt">
 						<p>
@@ -202,24 +204,24 @@
 	<footer>
 		<div class="arrow-up">
 			<a href="#me">
-				<img src="lib/img/arrowup.png" alt="">
+				<img src="lib/img/arrowup.png" alt="Arrow pointing upwards">
 			</a>
 		</div>
 		<p>All rights reserved | © 2023</p>
 		<div class="footer-links">
 			<div class="link">
 				<a href="https://github.com/DustinJoosen" target="_blank">
-					<img src="lib/img/github.png" alt="">
+					<img src="lib/img/github.png" alt="Logo of Github">
 				</a>
 			</div>
 			<div class="link">
 				<a href="https://www.linkedin.com/in/dustin-joosen-b819731b5" target="_blank">
-					<img src="lib/img/linkedin.png" alt="">
+					<img src="lib/img/linkedin.png" alt="Logo of LinkedIn">
 				</a>
 			</div>
 			<div class="link">
 				<a href="mailto:dustinjoosen2003@gmail.com" target="_blank">
-					<img src="lib/img/gmail.png" alt="">
+					<img src="lib/img/gmail.png" alt="Logo of Gmail">
 				</a>
 			</div>
 		</div>
