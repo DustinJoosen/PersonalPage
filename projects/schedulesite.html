@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project | ScheduleSite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../lib/css/style.css">
+	<link rel="icon" href="../lib/favicon.ico" />
+</head>
+<body>
+	<nav id="nav">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li>Experience</li>
+			<li>Projects</li>
+		</ul>
+	</nav>
+	<canvas id="bubbles"></canvas>
+	<div class="container text-white">
+		<h3>ScheduleSite</h3>
+		<div class="col-12 row">
+			<div class="col-5">
+				<p>
+					ScheduleSite is a longer project of mine. It utilizes the Windesheim schedule API,
+					And then requests the schedule for the currently logged in user.<br/><br/>
+					This project took a lot longer then originally planned, due to difficulty in automatically
+					retrieving the api key for the user. The solution was very complicated, and invoked the use of
+					both browser cookies and a MongoDb collection.<br/><br/>
+					Right now this site is online, and can actually be used by the students of Windesheim Almere.
+				</p>
+				<table class="url-table">
+					<tr>
+						<td>Github Page</td>
+						<td>
+							<a href="https://github.com/DustinJoosen/ScheduleSite" target="_blank">
+								https://github.com/DustinJoosen/ScheduleSite
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Deployed Page</td>
+						<td>
+							<a href="https://schedulesite.nl" target="_blank">https://schedulesite.nl</a> (TBA)
+						</td>
+					</tr>
+				</table>
+				<button class="btn btn-primary col-1 mt-5 back-btn">Back</button>
+			</div>
+			<div class="col-6">
+				<img src="../lib/img/projects/schedulesite.png" width="100%" alt="">
+				<div class="col-8">
+					<button class="tag-button tag-button-red">Python</button>
+					<button class="tag-button tag-button-green">Authentication</button>
+					<button class="tag-button tag-button-blue">Flask</button>
+					<button class="tag-button tag-button-red">MongoDb</button>
+					<button class="tag-button tag-button-green">APIs</button>
+					<button class="tag-button tag-button-green">Encryption</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="fixed-bottom">
+		<div class="arrow-up">
+			<a href="#nav">
+				<img src="../lib/img/arrowup.png" alt="">
+			</a>
+		</div>
+		<p>All rights reserved | © 2023</p>
+		<div class="footer-links">
+			<div class="link">
+				<a href="https://github.com/DustinJoosen" target="_blank">
+					<img src="../lib/img/github.png" alt="">
+				</a>
+			</div>
+			<div class="link">
+				<a href="https://www.linkedin.com/in/dustin-joosen-b819731b5" target="_blank">
+					<img src="../lib/img/linkedin.png" alt="">
+				</a>
+			</div>
+			<div class="link">
+				<a href="mailto:dustinjoosen2003@gmail.com" target="_blank">
+					<img src="../lib/img/gmail.png" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="../lib/js/jquery.min.js"></script>
+	<script src="../lib/js/bootstrap.min.js"></script>
+	<script src="../lib/js/bubbles.js"></script>
+	<script src="../lib/js/main.js"></script>
+</body>
+</html>
