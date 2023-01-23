@@ -76,7 +76,7 @@ nav ul li a {
 .underline::after {
     content: '';
     display: block;
-    width: 600px;
+    width: 50%;
     height: 6px;
     margin-top: -20px;
     background-color: white;
@@ -95,8 +95,8 @@ nav ul li a {
 }
 
 .pic-of-me {
-    width: 300px;
-    height: 300px;
+    width: 20%;
+    height: 20%;
     border-radius: 50%;
     border: 2px solid white;
 }

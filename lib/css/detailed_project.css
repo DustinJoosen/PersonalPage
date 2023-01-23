@@ -38,3 +38,33 @@
 .tag-button-red:hover {
     background-color: tomato;
 }
+
+/* Phone */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90% !important;
+    }
+
+    .project-page-holder #right {
+        margin-top: 50px;
+    }
+}
+/* Wide */
+@media only screen and (min-width: 480px) {
+    .project-page-holder {
+        display: inline-block;
+    }
+
+    .project-page-holder #left {
+        width: 40%;
+        margin-right: 5%;
+        display: inline-block;
+    }
+    .project-page-holder #right {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+
