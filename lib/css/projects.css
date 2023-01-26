@@ -86,3 +86,38 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+/* Thin */
+@media only screen and (max-width: 580px) {
+    .project {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 90px;
+        border: 1px solid green;
+    }
+    #project-header {
+        text-align: center;
+    }
+}
+
+/* Medium */
+@media only screen and (min-width: 580px) {
+    .project {
+        width: 40%;
+        margin-bottom: 100px;
+        border: 1px solid red;
+    }
+}
+
+/* Wide */
+@media only screen and (min-width: 780px) {
+    .project {
+        width: 22%;
+        border: 1px solid blue;
+    }
+
+    .project-desc {
+        overflow-y: auto;
+    }
+}
