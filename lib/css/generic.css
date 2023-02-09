@@ -73,6 +73,13 @@ nav ul li a {
     height: 150px;
 }
 
+/* Thin */
+@media only screen and (max-width: 770px) {
+    #header-name {
+        margin-bottom: 100px;
+    }
+}
+
 .underline::after {
     content: '';
     display: block;
@@ -139,4 +146,17 @@ footer .arrow-up {
 }
 footer .arrow-up a img {
     width: 50px;
+}
+
+@media only screen and (max-width: 440px) {
+    footer {
+        height: auto;
+    }
+
+    .footer-links .link {
+        width: 15%;
+    }
+    .arrow-up {
+        width: 40%;
+    }
 }
