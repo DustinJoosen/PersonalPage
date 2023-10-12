@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LinkedIn redirect</title>
+    <style>
+        h3, p {
+            text-align: center;
+            font-family: Arial;
+        }
+        h3 {
+            margin-top: 200px;
+        }
+        p {
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>You will be redirected to my linkedin page any moment.</h3>
+    <p>If this doesn't happen, please click <a href="https://www.linkedin.com/in/dustin-joosen-b819731b5/">this</a> link.</p>
+    <script>
+        // wait 500 milliseconds to ensure the page is correctly loaded
+        setTimeout(function() {
+            window.location.href = "https://www.linkedin.com/in/dustin-joosen-b819731b5/";
+        }, 500);
+    </script>
+</body>
+</html>
