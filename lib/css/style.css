@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-white: #E9E9E9;
+    --main-blue: #6666FF;
+    --main-black: #333333;
+}
+
+body {
+    background-color: var(--main-white);
+    overflow-x: hidden;
+    color: var(--main-black);
+    font-family: tauri;
+}
+
+@font-face {
+    font-family: tauri;
+    font-display: block;
+    src: url("../tauri.ttf");
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    background-color: var(--main-blue);
+    border-bottom: 1px solid var(--main-white);
+}
+
+#logo, #outer-navbar-list {
+    display: inline-block;
+}
+
+#inner-navbar-list { 
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+#inner-navbar-list a {
+    display: inline-block;
+    color: var(--main-black);
+    text-decoration: none;
+    transition: 250ms;
+}
+#inner-navbar-list a:hover {
+    color: var(--main-blue);
+}
+
+#logo {
+    margin-left: 30px !important;
+    cursor: pointer;
+}
+
+#inner-navbar-list a,
+#logo 
+{
+    background-color: var(--main-white);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 20px;
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px var(--main-black);
+    font-size: 20px;
+}
+
+
+/* Main content */
+main {
+    margin-top: 80px;
+}
+
+#main h1 {
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#main p {
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 600px;
+    /* border: 1px solid red; */
+}
+
+#dustin-picture {
+    width: 360px;
+    float: right;
+    right: 100px;
+    position: absolute;
+    top: 226px;
+    z-index: 3;
+}
+
+#dustin-picture-oval {
+    width: 780px;
+    height: 600px;
+    background-color: #d9d9d9;
+    position: absolute;
+    right: -150px;
+    top: 200px;
+    border-radius: 50%;
+    transform: rotate(18.511deg);
+    z-index: 2;
+}
+
+.auto-written-name {
+    color: var(--main-blue);
+}
+.auto-written-name::after {
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width: 2px;
+    height: 35px;
+    background-color: var(--main-blue);
+    animation: blink 1s step-end infinite;
+}
+
+/* Backgrounds */
+#main {
+    height: 630px;
+}
+
+#education-employment {
+    height: 550px;
+}
+
+#main,
+#education-employment 
+{
+    background-color: var(--main-white);
+    border: 1px solid var(--main-white);
+}
+
+#about-me,
+#skills 
+{
+    position: sticky;
+    background-color: var(--main-blue);
+    height: 700px;
+    outline: 1px solid var(--main-blue);
+    z-index:4;
+}
+
+
+/* Animations */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

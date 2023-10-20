@@ -1,234 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Dustin Joosen</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
-<!--	<link rel="stylesheet" href="lib/css/debug.css">-->
-	<link rel="stylesheet" href="lib/css/generic.css">
-	<link rel="stylesheet" href="lib/css/projects.css">
-	<link rel="stylesheet" href="lib/css/skills.css">
-	<link rel="icon" href="lib/favicon.ico" />
+    <link rel="stylesheet" href="lib/css/style.css" />
+    <script src="lib/js/jquery.js"></script>
+    <script src="lib/js/main.js"></script>
+    <title>Dustin Joosen</title>
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-		</ul>
-	</nav>
-	<div class="container text-white">
-		<canvas id="bubbles"></canvas>
-		<div id="me" class="mb-5">
-			<h1 class="animated-text" id="header-name" content="Dustin Joosen"></h1>
-			<div class="d-flex">
-				<img src="lib/img/dustin.jpg" class="pic-of-me col-4" alt="Picture of Dustin Joosen" />
-				<div class="col-1"></div>
-				<p class="col-6">
-					Hi! My name is Dustin Joosen.<br/>
-					I am a full stack software developer, with many years of experience in the field.<br/><br/>
-					Programming has been my hobby for a long time.<br/>
-					I have always find it fascinating how computers can manage to do complicated things<br/>
-					and simplify tasks, seemingly without much effort.<br/><br/>
-					As a developer i always strive to create a solution to problems,<br/>
-					and to improve the experience for users.<br/><br/>
-					When i am not working on projects for users,<br/>
-					i can always be found with a side-project to improve and test my skills.
-				</p>
-			</div>
-		</div>
-		<div id="projects" class="mb-5">
-			<h1 id="project-header">Projects</h1>
-			<p>
-				These are my best projects. To view all other projects,
-				please visit my <a href="https://github.com/DustinJoosen" target="_blank">github</a> page.
-			</p>
-			<div class="projects row mt-4">
-				<div class="project" content="schedulesite" title="Click to view the result in action!">
-					<h4>ScheduleSite</h4>
-					<div class="project-img">
-						<img src="lib/img/projects/schedulesite.png"  alt="Picture of ScheduleSite webpage"/>
-					</div>
-					<p class="project-desc">
-						ScheduleSite is a site that utilizes the schedule API of Windesheim.
-						This website allows students to view their school schedule in an alternative way.
-					</p>
-					<div class="project-tags">
-						Python, Flask, MongoDb, HTTP, jQuery, Encryption
-					</div>
-				</div>
-				<div class="project" content="albumstobuy" title="Click to view the result in action!">
-					<h4>AlbumsToBuy</h4>
-					<div class="project-img">
-						<img src="lib/img/projects/albumstobuy.png" alt="Picture of AlbumsToBuy webpage" />
-					</div>
-					<p class="project-desc">
-						AlbumsToBuy is a webshop for the fictional business 'AlbumsToBuy'.
-						Customers can view an album with its tracks, and order it.
-					</p>
-					<div class="project-tags">
-						C#, Entity Framework, Image Handling, Mailing, Authentication
-					</div>
-				</div>
-				<div class="project" content="pulserun" title="Click to view the result in action!">
-					<h4>Pulse Run</h4>
-					<div class="project-img">
-						<img src="lib/img/projects/pulserun.png" alt="Picture of PulseRun" />
-					</div>
-					<p class="project-desc">
-						PulseRun is a small python game where you try to survive as long as possible,
-						While avoiding the enemy and collecting batteries to shoot pulses at the enemy.
-					</p>
-					<div class="project-tags">
-						Python, Pygame
-					</div>
-				</div>
-				<div class="project" content="novachat" title="Click to view the result in action!">
-					<h4>Novachat</h4>
-					<div class="project-img">
-						<img src="lib/img/projects/novachat.png" alt="Picture of Novachat" />
-					</div>
-					<p class="project-desc">
-						Novachat is a real-time chat app, with different channels you can create and add people to.
-						It uses a combination of laravel and jquery for frontend and backend respectively.
-					</p>
-					<div class="project-tags">
-						PHP, Laravel, jQuery, Broadcasting
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="skills">
-			<h1 id="skills-header">Skills</h1>
-			<div class="skills-list">
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/python.png" alt="Logo of programming language Python">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>Python</span>
-							Experience since 2018
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="70"></progress>
-					</div>
-				</div>
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/csharp.png" alt="Logo of programming language C#">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>C#</span>
-							Experience since 2020
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="75"></progress>
-					</div>
-				</div>
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/php.png" alt="Logo of programming language PHP">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>PHP</span>
-							Experience since 2019
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="50"></progress>
-					</div>
-				</div>
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/js.png" alt="Logo of programming language Javascript">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>Javascript</span>
-							Experience since 2018
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="30"></progress>
-					</div>
-				</div>
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/SQL.png" alt="Logo of DDL language SQL">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>SQL</span>
-							Experience since 2020
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="85"></progress>
-					</div>
-				</div>
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/html.png" alt="Logo of markup language HTML">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>HTML</span>
-							Experience since 2018
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="80"></progress>
-					</div>
-				</div>
-				<div class="skill">
-					<div class="skill-img">
-						<img src="lib/img/skills/java.png" alt="Logo of programming language Java">
-					</div>
-					<div class="skill-txt">
-						<p>
-							<span>Java</span>
-							Experience since 2023
-						</p>
-					</div>
-					<div class="skill-bar">
-						<progress max="100" value="25"></progress>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="arrow-up">
-			<a href="#me">
-				<img src="lib/img/arrowup.png" alt="Arrow pointing upwards">
-			</a>
-		</div>
-		<p>All rights reserved | © 2023</p>
-		<div class="footer-links">
-			<div class="link">
-				<a href="https://github.com/DustinJoosen" target="_blank">
-					<img src="lib/img/github.png" alt="Logo of Github">
-				</a>
-			</div>
-			<div class="link">
-				<a href="https://www.linkedin.com/in/dustin-joosen-b819731b5" target="_blank">
-					<img src="lib/img/linkedin.png" alt="Logo of LinkedIn">
-				</a>
-			</div>
-			<div class="link">
-				<a href="mailto:dustinjoosen2003@gmail.com" target="_blank">
-					<img src="lib/img/gmail.png" alt="Logo of Gmail">
-				</a>
-			</div>
-		</div>
-	</footer>
-	<script src="lib/js/jquery.min.js"></script>
-	<script src="lib/js/bootstrap.min.js"></script>
-	<script src="lib/js/bubbles.js"></script>
-	<script src="lib/js/main.js"></script>
+    <nav>
+        <p id="logo">Dustin Joosen</p>
+        <div id="outer-navbar-list">
+            <div id="inner-navbar-list">
+                <a href="#">Contact</a>
+                <a href="lib/files/DustinJoosen_CV.pdf" target="_blank">CV</a>
+                <a href="#">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="main">
+            <h1>Hi. I am <span class="auto-written-name">Dustin</span></h1>
+            <p>
+                Programming has always been my biggest hobby, which is something I want<br/>
+                to pursue in my career.
+            </p>
+            <p>
+                I'm passionate about developing solutions to challenges and continuously<br/>
+                improving my skills through hand-on-projects. These projects range from <br/>
+                management applications, to a custom ORM, to even a ROM-hack.<br/>
+            </p>
+            <p>
+                In this fast-evolving world of technology, I'm excited to see where the endless<br/>
+                possibilities will take me.
+            </p>
+            </p>
+            <div id="dustin-picture-oval"></div>
+            <img id="dustin-picture" src="lib/img/dustin.png" />
+        </div>
+        <div id="about-me">
+        </div>
+        <div id="education-employment">
+        </div>
+        <div id="skills">
+        </div>
+        <div id="contests">
+        </div>
+    </main>
 </body>
-<html>
+</html>
