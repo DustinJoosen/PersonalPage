@@ -323,6 +323,109 @@ h1 {
     margin-right: 50px;
 }
 
+/* Skills */
+#skills h1 {
+    padding-top: 100px;
+    color: var(--main-white);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.skills-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill {
+    border: 1px solid var(--main-blue);
+    height: 80px;
+    width: 340px;
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 6px var(--main-black);
+}
+/* .skill * { outline: 1px solid red; } */
+
+.skill-img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.skill-img img {
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 8/8;
+}
+
+.skill-info {
+    width: 240px;
+}
+
+.skill-img,
+.skill-info {
+    display: inline-block;
+}
+
+.skill-text {
+    font-size: 20px;
+}
+.skill-text span {
+    font-size: 16px;
+}
+
+.skill-prog progress {
+    width: 90%;
+}
+
+.skill-prog progress::-webkit-progress-bar {
+    border-radius: 50px;
+    background-color: white;
+    border: 0;
+    height: 15px;
+}
+
+progress {
+    border-radius: 50px;
+}
+progress::-webkit-progress-bar {
+    border: 0;
+    border-radius: 50px;
+}
+progress::-webkit-progress-value {
+    border: 0;
+    border-radius: 50px;
+    background-color: tomato;
+}
+
+#mta {
+    display: flex;
+    align-items:center;
+    margin-top: 40px;
+}
+#mta img {
+    width: 120px;
+    margin-left: 5%;
+}
+#mta p {
+    color: var(--main-white);
+    display: inline-block;
+    padding-left: 10px; 
+}
+#mta a {
+    color: var(--main-white);
+}
+
 /* Backgrounds */
 #main {
     height: 630px;
@@ -343,12 +446,19 @@ h1 {
     height: 660px;
 }
 
-#about-me,
-#skills 
-{
+#about-me {
     position: sticky;
     background-color: var(--main-blue);
-    height: 750px;
+    height: 730px;
+    width: 100%;
+    outline: 1px solid var(--main-blue);
+    z-index:4;
+}
+
+#skills {
+    position: sticky;
+    background-color: var(--main-blue);
+    height: 800px;
     width: 100%;
     outline: 1px solid var(--main-blue);
     z-index:4;
