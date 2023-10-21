@@ -7,7 +7,7 @@
 </head>
 <body>
     <nav>
-        <p id="logo">Dustin Joosen</p>
+        <p id="logo" onclick="goToTop()">Dustin Joosen</p>
         <div id="outer-navbar-list">
             <div id="inner-navbar-list">
                 <a href="#">Contact</a>
@@ -17,6 +17,7 @@
         </div>
     </nav>
     <main>
+        <img src="lib/img/uparrow.png" id="goToTop" width="30" onclick="goToTop()"/>
         <div id="main">
             <h1>Hi. I am <span class="auto-written-name">Dustin</span></h1>
             <p>
@@ -335,7 +336,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="mta">
                 <img src="lib/img/mta.png" alt="">
                 <p>
@@ -346,11 +346,36 @@
                     </a>)
                 </p>
             </div>
-
         </div>
         <div id="contests">
+            <h1>Contests</h1>
+            <div id="contest-info">
+                <h2>Skills Heroes</h2>
+                <p>
+                    Skills heroes is a big contest where people get the chance to represent<br/> 
+                    their own discipline. I have participated in 2022, where I made it <br/>
+                    through 3 rounds into the national finale, placing 7th. This was an <br/>
+                    amazing experience.
+                </p>
+                <br/>
+                <h2>Cloudflight coding contest</h2>
+                <p>
+                    I have participated in <strong>3</strong> editions of the cloudflight coding contest.<br/>
+                    I don't see myself ever not participating when it happens. <br/>
+                    While never being close to finishing and winning, <br/>
+                    It's never boring and I always end the day happy.
+                </p>
+            </div>
+            <div id="contest-img">
+                <img src="lib/img/voorronde.jpg" id="sh-voorronde-img" />
+                <br/>
+                <img src="lib/img/ccc-logo.jpg" id="ccc-logo-img"/>
+            </div>
         </div>
     </main>
+    <!-- <footer>
+        <p>Copyright 2023</p>
+    </footer> -->
     <script src="lib/js/jquery.js"></script>
     <script src="lib/js/main.js"></script>
 </body>
