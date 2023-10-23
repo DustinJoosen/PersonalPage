@@ -100,3 +100,28 @@ body {
     top: -50px;
     border-radius: 50%;
 }
+
+/* Mobile versions */
+@media only screen and (max-width: 768px) {
+    * {
+    }
+    .card-img {
+        width: 20vw;
+        height: 20vw;
+        display: inline-block;
+    }
+    h1 {
+        font-size: 20px !important;
+    }
+    h4 {
+        font-size: 14px !important;
+    }
+    .links img {
+        width: 8vw;
+    }
+    .card {
+        height: 250px;
+    }
+    .name-and-title {
+    }
+}
