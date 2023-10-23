@@ -478,6 +478,28 @@ progress::-webkit-progress-value {
     display: inline-block;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    margin-left: 80px;
+}
+.links {
+    margin-right: 100px;
+}
+.links a {
+    text-decoration: none;
+    margin: 3px;
+    padding: 5px;
+}
+.links img {
+    height: 40px;
+    /* border: 1px solid red; */
+}
+
 /* Backgrounds */
 #main {
     height: 630px;
