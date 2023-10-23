@@ -33,8 +33,6 @@ body {
     box-shadow: 1px 1px 10px #6666FF;
     margin: 35px;
     margin-left: 45px;
-    animation-name: example;
-    animation-duration: 10s;
   }
 
 .name-and-title {
@@ -93,29 +91,12 @@ body {
     text-decoration: none;
 }
 
-@keyframes circlearound {
-    0% {
-        transform: rotateX('0deg');
-    }
-    20% {
-        transform: rotateX('72deg');
-    }
-    40% {
-        transform: rotateX('144eg');
-    }
-    60% {
-        transform: rotateX('216deg');
-    }
-    80% {
-        transform: rotateX('288deg');
-    }
+.quarter-circle {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed #6666FF;
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    border-radius: 50%;
 }
-
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-  }
-  
