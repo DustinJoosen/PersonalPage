@@ -44,7 +44,7 @@ body {
 }
 .name-and-title h4 {
     color: #333;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 100;
     margin-top: -5px;
 }
@@ -101,27 +101,25 @@ body {
     border-radius: 50%;
 }
 
-/* Mobile versions */
-@media only screen and (max-width: 768px) {
-    * {
-    }
-    .card-img {
-        width: 20vw;
-        height: 20vw;
-        display: inline-block;
-    }
-    h1 {
-        font-size: 20px !important;
-    }
-    h4 {
-        font-size: 14px !important;
-    }
-    .links img {
-        width: 8vw;
-    }
-    .card {
-        height: 250px;
-    }
-    .name-and-title {
-    }
-}
+/*!* Mobile versions *!*/
+/*@media only screen and (max-width: 500px) {*/
+/*    .card {*/
+/*        width: 95%;*/
+/*        margin-left: 2.5%;*/
+/*    }*/
+/*    .card-img {*/
+/*        width: 100px;*/
+/*        height: 100px;*/
+/*    }*/
+/*    .name-and-title h1 {*/
+/*        font-size: 30px;*/
+/*    }*/
+/*    .card-bottom {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*    .links {*/
+/*        width: 100% !important;*/
+/*        position: relative;*/
+/*        left: -100%;*/
+/*    }*/
+/*}*/
